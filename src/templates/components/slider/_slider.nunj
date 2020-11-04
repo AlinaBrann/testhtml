@@ -1,0 +1,26 @@
+<div class="object-storage-slider">
+    {% for item in slides %}
+        <div class="object-storage-slider-slide">
+            <div class="text-block _left">
+                <div class="text-block__inner">
+                    <div class="text-block__title">{{ item.leftBlock.title }}</div>
+                    <ul class="text-block-list">
+                        {% for li in item.leftBlock.list %}
+                            <li class="text-block-list__item">{{ li.text }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="text-block _left">
+                <div class="text-block__inner">
+                    <div class="text-block__title">{{ item.rightBlock.title }}</div>
+                    <ul class="text-block-list">
+                        {% for li in item.rightBlock.list %}
+                            <li class="text-block-list__item">{{ li.text }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>

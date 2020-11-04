@@ -1,0 +1,11 @@
+<div  class="object-storage-preview">
+    {% for item in slides %}
+    <div class="object-storage-preview-slide">
+        <div class="object-storage-preview-slide__image-wrapper">
+            <img src="media/img/slides/slide-{{ item.img }}.jpg" class="object-storage-preview-slide__image" alt="">
+        </div>
+        <div class="object-storage-preview-slide__title">{{ item.title }}</div>
+    </div>
+        
+    {% endfor %}
+</div>

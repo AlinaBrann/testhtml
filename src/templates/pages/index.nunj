@@ -1,0 +1,15 @@
+{% extends "../ext/base.nunj" %}
+
+{% block content %}
+
+	<div class="container">
+		<section class="object-storage">
+			<h1 class="object-storage__title">Объектное хранилище</h1>
+			<div class="object-storage__subtitle">Храните контент рядом с клиентами в Европе, Азии и США </div>
+			{% include '../components/preview/_preview.nunj' %}
+			{% include '../components/slider/_slider.nunj' %}
+			<a href="https://gcorelabs.com/ru/storage/" class="object-storage__button button" target="_blank">Подробнее о хранилище</a>
+		</section>
+		
+	</div>
+{% endblock content %}

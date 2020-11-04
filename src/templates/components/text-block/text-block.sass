@@ -1,0 +1,48 @@
+.text-block
+    width: 100%
+    flex: auto
+    padding: $slide-pudding
+    align-items: stretch
+    +min-screen($screen-sm)
+        flex: 0 0 50%  
+    &__inner
+        display: block
+        height: 100%
+        padding: 20px 26px 35px 25px
+        background: #f7f7f7
+        +min-screen($screen-sm)
+            padding: 25px 36px 35px 33px
+        +min-screen($screen-md)
+            padding: 29px 36px 45px 53px
+    &__title
+        margin-bottom: 20px
+        font-size: 16px
+        line-height: 20px
+        +min-screen($screen-sm)
+            margin-bottom: 25px
+            font-size: 18px
+            line-height: 23px
+    &-list
+        &__item
+            position: relative
+            padding-left: 35px
+            font-size: 14px
+            +min-screen($screen-sm)
+                padding-left: 45px
+                font-size: 16px
+                line-height: 21px
+            &:not(:last-of-type)
+                margin-bottom: 13px
+            &:before 
+                content: ''
+                position: absolute
+                top: 0
+                left: 0
+                display: block
+                width: 20px
+                height: 20px
+                background: url(../img/list.png) no-repeat center
+                background-size: contain
+                +min-screen($screen-sm)
+                    width: 23px
+                    height: 23px
